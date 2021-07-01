@@ -3,7 +3,7 @@ package day3;
 public class SwitchStatement {
 
     public static void main(String[] args) {
-        int x = 5;
+        int x = 7;
 
         switch(x) {
             case 6: {
