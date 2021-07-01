@@ -1,4 +1,4 @@
-package edit_compile_execute;
+package day3;
 
 public class HelloWorld {
 	public static void main(String[] args) {
