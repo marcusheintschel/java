@@ -34,6 +34,8 @@ public class Notes {
 	
 	
 	
+	
+	
 	//Encapsulation
 	/*
 	 * The act of wrapping code into a single unit and then selectively 
@@ -46,11 +48,51 @@ public class Notes {
 	private static String pri = "Private";
 	
 	public static void main(String[] args) {
-		System.out.println(pub);
-		System.out.println(pro);
-		System.out.println(def);
-		System.out.println(pri);
+		System.out.println(pub); //available everywhere
+		System.out.println(pro); // protected and default fields must be accessed in the same package
+		System.out.println(def); // you can access protected fields outside of a
+								// package if you establish an inheritance relationship
+		System.out.println(pri); // can't access out of this class (private)
+		
+		
+		
+		
 	}
 	
+	public String accountHolder;
+	public double accountTotal;
+	public long accountId;
+	
+	/*
+	 * Getters and Setters are a convention used to read/access or change/mutate the fields
+	 * (variables) on a class
+	 * getters and setters use the following naming convention
+	 * 
+	 * get<VariableName>
+	 * set<VariableName>
+	 */
+	public String getAccountHolder(){
+		return accountHolder;
+	}
+	
+	void setAccountHolder(String accountHolder) {
+		this.accountHolder = accountHolder;
+	}
+
+	double getAccountTotal() {
+		return accountTotal;
+	}
+
+	private void setAccountTotal(double accountTotal) {
+		this.accountTotal = accountTotal;
+	}
+
+	public long getAccountId() {
+		return accountId;
+	}
+
+	public void setAccountId(long accountId) {
+		this.accountId = accountId;
+	}
 	
 }
