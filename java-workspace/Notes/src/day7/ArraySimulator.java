@@ -9,13 +9,7 @@ public class ArraySimulator {
 		
 		ArrayList<Integer> alist = new ArrayList<Integer>();
 		
-		alist.add(5);
-		alist.add(6,5);
 		
-		for (int i = 0; i <= alist.size(); i++) {
-			System.out.println(alist.indexOf(i));
-		}
-	
 	
 	}
 }
