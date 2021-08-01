@@ -6,15 +6,25 @@ public class Account {
 	private int id;
 	private String type;
 	private double balance;
+	private int customerid;
 	
 	
 	
-	public Account(int id, String type, double balance) {
+	public Account(int id, String type, double balance,int customerid) {
 		super();
 		this.id = id;
 		this.type = type;
 		this.balance = balance;
+		this.customerid = customerid;
 	}
+	
+	public String toString() {
+		return "Account No.: " + id + " | Account Type: " + type + " | Balance: $" + balance;
+	}
+	public String transfer() {
+		return "Account No.: " + id + " | Account Type: " + type;
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -32,6 +42,12 @@ public class Account {
 	}
 	public void setBalance(double balance) {
 		this.balance = balance;
+	}
+	public int getCustomerid() {
+		return customerid;
+	}
+	public void setCustomerid(int customerid) {
+		this.customerid = customerid;
 	}
 	
 }

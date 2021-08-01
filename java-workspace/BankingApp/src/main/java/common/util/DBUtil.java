@@ -41,7 +41,7 @@ public class DBUtil {
 						props.getProperty(AppConstants.DB_USER),
 						props.getProperty(AppConstants.DB_PASSWORD));
 			}catch (Exception e) {
-				logger.warn("Unable to get database connection",e);
+				logger.info("Unable to get database connection",e);
 				throw e;
 			}
 		}

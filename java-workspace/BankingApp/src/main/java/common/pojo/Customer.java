@@ -11,8 +11,8 @@ public class Customer {
 	private String password;
 	
 	
-	public Customer(int id, String first_name, String last_name, String email, String dob, String username,
-			String password) {
+	public Customer(int id, String first_name, String last_name, 
+					String email, String dob, String username, String password) {
 		super();
 		this.id = id;
 		this.first_name = first_name;
@@ -21,6 +21,13 @@ public class Customer {
 		this.dob = dob;
 		this.username = username;
 		this.password = password;
+	}
+
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "id: | " + id + " | first: | " + first_name + " | last: | " + last_name + " | email: | " + email + " | dob: | " + dob + " | username: | " + username + " | password | " + password + " |";
 	}
 
 

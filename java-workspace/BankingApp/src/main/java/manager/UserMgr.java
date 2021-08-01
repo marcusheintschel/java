@@ -1,15 +1,13 @@
 package manager;
 
-import java.util.List;
+import java.sql.SQLException;
 
-import client.ConsoleApp;
 import common.pojo.Customer;
 import dao.UserDAO;
 
 public class UserMgr {
 	
 	UserDAO dao = new UserDAO();
-
 	public void register()/* throws CustomerAlreadyExistsException */ {
 		try {
 			dao.register();
@@ -20,12 +18,21 @@ public class UserMgr {
 	}
 	
 	
-	public void login() {
-		try {
-			dao.login();
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
+	public Customer login() throws SQLException{
+		
+			Customer c = null;
+			try {
+				c = dao.login();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return c;
 	}
+
+	public void employeeLogin() {
+		
+	}
+	
 	
 }

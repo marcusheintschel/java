@@ -12,7 +12,7 @@ public class App {
 		
 		ConsoleApp console = new ConsoleApp();
 		logger.info("Starting Application...");
-		console.start();
+		console.start(); 
 		logger.info("...Exiting Application");
 	}
 }
